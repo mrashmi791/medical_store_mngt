@@ -1,0 +1,82 @@
+#mySidenav a {
+    position: fixed;
+    left: -90px;
+    transition: 0.8s;
+    padding-left: 3px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+   
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #facebook {
+    top: 250px;
+    background-color: #4CAF50;
+  }
+  
+  #google {
+    top: 290px;
+    background-color: #2196F3;
+  }
+  
+  #linkedlin {
+    top: 330px;
+    background-color: #f44336;
+  }
+  
+  #instagram {
+      top:370px;
+      background-color: #f44336;
+  
+  }
+  
+  .fa-facebook{
+      padding-left: 15px !important;
+    
+  }
+  
+  .fa-instagram{
+    padding-left: 10px !important;
+  
+  }
+  
+   .fa-linkedin {
+    padding-left: 22px !important;
+  }
+  
+  .fa-google {
+    padding-left: 32px !important; 
+  }
+  
+  #feedbackNav a {
+    position: fixed;
+    right: -55px;
+    padding: 5px;
+    margin: 25px;
+    transform: rotateZ(90deg);
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #feedback {
+    top: 125px;
+    background-color: #fd7e14;;
+  }
+  
+  .modal_popup {
+    position: fixed;
+    right: 0;
+    top: 8%;
+    z-index: 999999;
+    overflow: hidden;
+    display: block;
+  }
+  
+  
