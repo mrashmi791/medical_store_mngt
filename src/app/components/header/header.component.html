@@ -18,19 +18,27 @@
             <a class="nav-link" href="javascript:void(0)" [routerLink]="['/about']">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" [routerLink]="['/feedback']">Signin</a>
-           
+            <a class="nav-link" href="javascript:void(0)" [routerLink]="['/register']">Signin</a>
+            <!-- <div class="dropdown">
+                <a class="nav-link" type="button" data-toggle="dropdown">Signin</a>
+                <ul class="dropdown-menu">
+                  <li><a  (click)="signInWithFB()">Facebook</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                </ul>
+              </div> -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" [routerLink]="['/product']">Product</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link"
+             (click)="signInWithFB()">Facebook </a> 
+               </li> -->
           <li class="nav-item">
-            <a class="button button--social-login button--facebook"
-            style="width: 228px;" (click)="signInWithFB()">Facebook </a> 
-               </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="javascript:void(0)" [routerLink]="['/']">Contact</a>
           </li>
+          
         </ul>
        
       </div>

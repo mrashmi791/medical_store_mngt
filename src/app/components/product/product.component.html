@@ -1,19 +1,24 @@
-
+<div class="container"> 
 <table class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Website</th>
-      </tr>
-    </thead>
-    <tbody>
-     <tr *ngFor="let group of data">
-           <td>{{group.name}}</td>
-           <td>{{group.email}}</td>
-           <td>{{group.website}}</td>
-       </tr>
-    </tbody>
-  </table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>company name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>action</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let group of data">
+         <td>{{group.name}}</td>
+         <td>{{group.company}}</td>
+         <td>{{group.quantity}}</td>
+         <td>{{group.price}}</td>
+         <td><button href="javascript:void(0)" [routerLink]="['/add-product']">Add</button><button>delete</button><button>update</button></td>
+     </tr>
+  </tbody>
+</table>
+</div>
   
   

@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"> </div>
+        <div class="col-md-8 form-data">
+                <div class="row form-input  ">
+                        <div class="col-md-3">
+                            <label for="name"> Company Name:</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" placeholder=" Company Name" id="company" class="form-control" 
+                            [(ngModel)] ="product.company">
+                        </div>
+                    </div>
+            <div class="row  form-input">
+                <div class="col-md-3">
+                    <label for="name"> Product Name:</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" placeholder="Name" id="product" class="form-control" 
+                    [(ngModel)]="product.product" >
+                </div>
+            </div>
+            
+            <div class="row form-input">
+                <div class="col-md-3">
+                    <label for="name"> Price:</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="number" placeholder="Price" id="price" class="form-control"
+                     [(ngModel)]="product.price" >
+                </div>
+            </div>
+            <div class="row form-input">
+                <div class="col-md-3">
+                    <label for="name"> Quantity:</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="number" placeholder="Quantity" id="quantity" class="form-control"
+                     [(ngModel)]="product.quantity" >
+                </div>
+            </div>
+            <div>
+                <button class="form-button btn btn-primary"(click)="addProduct()">Save</button>
+            </div>
+        </div>
+        <div class="col-md-2"> </div>
+    </div>
+</div>

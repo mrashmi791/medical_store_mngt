@@ -17,7 +17,11 @@ import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import {DataTablesModule} from 'angular-datatables';
 import { ProductComponent } from './components/product/product.component';
-
+import { FooterComponent } from './components/footer/footer.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { RecaptchaModule , RecaptchaFormsModule } from "ng-recaptcha";
 
 const fbClientId : string= "1162174730920052";
 @NgModule({
@@ -27,7 +31,9 @@ const fbClientId : string= "1162174730920052";
     RegisterComponent,
     FeedbackSidenavComponent,
     HomeComponent,
-    ProductComponent
+    ProductComponent,
+    FooterComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,14 @@ const fbClientId : string= "1162174730920052";
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    DataTablesModule
+    DataTablesModule,
+    HttpClientModule,
+    FormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule
+    
+    
+    
     // NgcCookieConsentModule.forRoot(cookieConfig) 
   ],
   providers: [CookieService,
